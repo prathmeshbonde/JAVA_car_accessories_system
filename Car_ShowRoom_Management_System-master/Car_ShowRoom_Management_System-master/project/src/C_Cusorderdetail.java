@@ -84,7 +84,7 @@ Var cli=new Var();
         jScrollPane1.setViewportView(jTable1);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(50, 330, 1280, 190);
+        jScrollPane1.setBounds(80, 330, 1280, 350);
 
         jButton1.setText("VIEW");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +93,7 @@ Var cli=new Var();
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(650, 260, 90, 23);
+        jButton1.setBounds(650, 240, 90, 40);
 
         jLabel3.setFont(new java.awt.Font("Adobe Fan Heiti Std B", 1, 14)); // NOI18N
         jLabel3.setText(" (Give the MOBILE NO of the particular CUSTOMER)");
@@ -111,7 +111,7 @@ Var cli=new Var();
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(750, 260, 100, 23);
+        jButton2.setBounds(750, 240, 100, 40);
 
         jButton4.setText("BACK");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -120,7 +120,7 @@ Var cli=new Var();
             }
         });
         jPanel1.add(jButton4);
-        jButton4.setBounds(860, 260, 90, 23);
+        jButton4.setBounds(860, 240, 90, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

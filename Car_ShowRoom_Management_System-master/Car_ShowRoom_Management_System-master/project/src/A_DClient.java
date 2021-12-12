@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -34,14 +35,15 @@ public class A_DClient extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
+        
+        jPanel1.setBackground(new java.awt.Color(112, 41, 99));
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Algerian", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel1.setForeground(Color.white);
         jLabel1.setText("<HTML><BODY><U>delete CLIENT </U></BOD Y></HTML>");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(530, 30, 320, 50);
+        jLabel1.setBounds(600, 30, 320, 50);
 
         uid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,7 +51,7 @@ public class A_DClient extends javax.swing.JFrame {
             }
         });
         jPanel1.add(uid);
-        uid.setBounds(320, 130, 240, 30);
+        uid.setBounds(690, 130, 240, 40);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -63,7 +65,7 @@ public class A_DClient extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(70, 330, 1280, 190);
+        jScrollPane1.setBounds(85, 330, 1280, 360);
 
         jButton1.setText("DELETE");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -72,12 +74,13 @@ public class A_DClient extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(270, 210, 90, 30);
+        jButton1.setBounds(270, 210, 90, 60);
 
-        jLabel2.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times new roman", 1, 20)); // NOI18N
         jLabel2.setText("CLICK HERE TO CHECK THE NEW LIST");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(70, 290, 420, 30);
+        jLabel2.setBounds(540, 230, 440, 30);
+        jLabel2.setForeground(Color.white);
 
         jButton3.setText("CHECK");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +89,7 @@ public class A_DClient extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(390, 210, 110, 30);
+        jButton3.setBounds(390, 210, 110, 60);
 
         jButton4.setText("BACK");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -95,12 +98,13 @@ public class A_DClient extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton4);
-        jButton4.setBounds(650, 210, 110, 30);
+        jButton4.setBounds(1100, 210, 110, 60);
 
-        jLabel3.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 22)); // NOI18N
         jLabel3.setText("Enter Client ID :");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(180, 130, 120, 30);
+        jLabel3.setBounds(530, 135, 200, 30);
+        jLabel3.setForeground(Color.white);
 
         jButton2.setText("CLEAR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +113,7 @@ public class A_DClient extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(530, 210, 100, 30);
+        jButton2.setBounds(970, 210, 100, 60);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -180,7 +184,7 @@ public class A_DClient extends javax.swing.JFrame {
         String userid=uid.getText();
          try{   
                 Class.forName("java.sql.DriverManager");
-                Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/CarDB","root","1919");
+                Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/cardb","root","123456");
                 Statement stmt=(Statement) con.createStatement();
                 //Quary to delete Client
                String sql1="delete from Clientdb where userid='"+userid+"';";

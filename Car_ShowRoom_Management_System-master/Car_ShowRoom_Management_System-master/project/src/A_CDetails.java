@@ -37,17 +37,20 @@ public class A_CDetails extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
+        
+        jPanel1.setBackground(new java.awt.Color(10,10,94));
         jPanel1.setLayout(null);
 //        jPanel1.setLocationRelativeTo(null);
         jLabel1.setFont(new java.awt.Font("Algerian", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel1.setForeground(new java.awt.Color(255,255,255));
         jLabel1.setText("<HTML><BODY><U>CLIENT DETAILS</U></BODY></HTML>");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(530, 30, 310, 50);
 
         buttonGroup1.add(all);
         all.setText("ALL");
+        all.setFont(new java.awt.Font("Times new roman", 0, 25));
+        all.setForeground(new java.awt.Color(255,255,255));
         all.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 allMouseClicked(evt);
@@ -59,26 +62,29 @@ public class A_CDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(all);
-        all.setBounds(360, 130, 43, 23);
+        all.setBounds(360, 120, 90, 23);
 
         buttonGroup1.add(par);
         par.setText("PARTICULAR");
+        par.setFont(new java.awt.Font("Times new roman", 0, 25));
+        par.setForeground(new java.awt.Color(255,255,255));
         par.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 parMouseClicked(evt);
             }
         });
         jPanel1.add(par);
-        par.setBounds(459, 130, 110, 23);
+        par.setBounds(490, 120, 200, 23);
 
         uid.setEnabled(false);
         jPanel1.add(uid);
         uid.setBounds(490, 170, 290, 30);
 
-        jLabel2.setFont(new java.awt.Font("Adobe Fan Heiti Std B", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Adobe Fan Heiti Std B", 1, 20)); // NOI18N
         jLabel2.setText(" (Give the Client-Id of the particular person)");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(580, 130, 300, 20);
+        jLabel2.setForeground(new java.awt.Color(255,255,255));
+        jLabel2.setBounds(700, 120, 450, 20);
 
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -101,7 +107,7 @@ public class A_CDetails extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(40, 290, 1300, 360);
+        jScrollPane1.setBounds(70, 290, 1300, 400);
 
         jButton1.setText("VIEW");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -110,11 +116,13 @@ public class A_CDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(510, 220, 59, 23);
+        jButton1.setBounds(510, 220, 59, 40);
 
         jLabel3.setText("Enter Client-ID :");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(380, 170, 100, 20);
+        jLabel3.setBounds(350, 175, 130, 20);
+        jLabel3.setFont(new java.awt.Font("Times new roman", 0, 18));
+        jLabel3.setForeground(new java.awt.Color(255,255,255));
 
         jButton2.setText("BACK");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -123,7 +131,7 @@ public class A_CDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(700, 220, 80, 23);
+        jButton2.setBounds(700, 220, 80, 40);
 
         jButton3.setText("CLEAR");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -132,7 +140,7 @@ public class A_CDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(590, 220, 90, 23);
+        jButton3.setBounds(590, 220, 90, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

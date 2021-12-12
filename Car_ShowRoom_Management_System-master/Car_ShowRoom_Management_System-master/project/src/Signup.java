@@ -72,7 +72,7 @@ static int uidflag;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(112, 41, 99));
         jPanel2.setLayout(null);
 
         jLabel9.setFont(new java.awt.Font("Californian FB", 1, 24)); // NOI18N
@@ -80,9 +80,10 @@ static int uidflag;
         jLabel9.setText("Enter Your Details");
         jPanel2.add(jLabel9);
         jLabel9.setBounds(0, 70, 270, 28);
+        jLabel9.setForeground(new java.awt.Color(250,235,215));
 
         jLabel10.setFont(new java.awt.Font("Algerian", 0, 36)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel10.setForeground(new java.awt.Color(250,235,215));
         jLabel10.setText("Sign Up");
         jPanel2.add(jLabel10);
         jLabel10.setBounds(230, 10, 140, 40);
@@ -91,34 +92,41 @@ static int uidflag;
         jLabel8.setText("Address :");
         jPanel2.add(jLabel8);
         jLabel8.setBounds(40, 380, 146, 23);
+        jLabel8.setForeground(new java.awt.Color(250,235,215));
 
         jLabel7.setFont(new java.awt.Font("Tekton Pro Ext", 1, 14)); // NOI18N
         jLabel7.setText("Confirm Password :");
         jPanel2.add(jLabel7);
         jLabel7.setBounds(40, 340, 146, 20);
+        jLabel7.setForeground(new java.awt.Color(250,235,215));
 
         jLabel5.setFont(new java.awt.Font("Tekton Pro Ext", 1, 14)); // NOI18N
         jLabel5.setText("Password :");
         jPanel2.add(jLabel5);
         jLabel5.setBounds(40, 300, 100, 23);
-
+        jLabel5.setForeground(new java.awt.Color(250,235,215));
+        
         jLabel6.setFont(new java.awt.Font("Tekton Pro Ext", 1, 14)); // NOI18N
         jLabel6.setText("Email :");
         jPanel2.add(jLabel6);
         jLabel6.setBounds(40, 260, 146, 23);
+        jLabel6.setForeground(new java.awt.Color(250,235,215));
 
         jLabel4.setFont(new java.awt.Font("Tekton Pro Ext", 1, 14)); // NOI18N
         jLabel4.setText("Mobile No. :");
         jPanel2.add(jLabel4);
         jLabel4.setBounds(40, 220, 146, 23);
+        jLabel4.setForeground(new java.awt.Color(250,235,215));
 
         jLabel3.setFont(new java.awt.Font("Tekton Pro Ext", 1, 14)); // NOI18N
         jLabel3.setText("UserId :");
         jPanel2.add(jLabel3);
         jLabel3.setBounds(40, 160, 146, 23);
+        jLabel3.setForeground(new java.awt.Color(250,235,215));
 
         jLabel2.setFont(new java.awt.Font("Tekton Pro Ext", 1, 14)); // NOI18N
         jLabel2.setText("Full Name :");
+        jLabel2.setForeground(new java.awt.Color(250,235,215));
         jPanel2.add(jLabel2);
         jLabel2.setBounds(40, 120, 146, 23);
         jPanel2.add(cpass);
@@ -157,7 +165,7 @@ static int uidflag;
             }
         });
         jPanel2.add(jButton1);
-        jButton1.setBounds(250, 430, 70, 35);
+        jButton1.setBounds(250, 450, 70, 35);
 
         jButton2.setText("Exit");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -166,7 +174,7 @@ static int uidflag;
             }
         });
         jPanel2.add(jButton2);
-        jButton2.setBounds(460, 430, 65, 35);
+        jButton2.setBounds(460, 450, 65, 35);
 
         jButton4.setText("Back");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +183,7 @@ static int uidflag;
             }
         });
         jPanel2.add(jButton4);
-        jButton4.setBounds(360, 430, 65, 35);
+        jButton4.setBounds(360, 450, 65, 35);
 
         l1.setForeground(new java.awt.Color(0, 153, 0));
         jPanel2.add(l1);
@@ -403,5 +411,6 @@ this.setVisible(false);
     private javax.swing.JTextField name;
     private javax.swing.JPasswordField pass;
     private javax.swing.JTextField uid;
+    
     // End of variables declaration//GEN-END:variables
 }

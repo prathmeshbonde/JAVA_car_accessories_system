@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -42,6 +43,7 @@ public class A_CUSDetails extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
+        jPanel1.setBackground(new java.awt.Color(119, 7, 55));
 
         jLabel1.setFont(new java.awt.Font("Algerian", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 0, 102));
@@ -51,6 +53,7 @@ public class A_CUSDetails extends javax.swing.JFrame {
         jLabel1.setBounds(500, 30, 600, 50);
 
         buttonGroup1.add(all);
+        all.setFont(new java.awt.Font("Times new roman", 0, 20));
         all.setText("ALL");
         all.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,7 +61,8 @@ public class A_CUSDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(all);
-        all.setBounds(363, 140, 80, 23);
+        all.setBounds(330, 140, 80, 23);
+        all.setForeground(Color.white);
 
         buttonGroup1.add(par);
         par.setText("PARTICULAR CUSTOMER");
@@ -68,7 +72,9 @@ public class A_CUSDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(par);
-        par.setBounds(360, 170, 180, 23);
+        par.setBounds(330, 170, 180, 23);
+        par.setForeground(Color.white);
+        par.setFont(new java.awt.Font("Times new roman", 0, 20));
 
         mob.setEnabled(false);
         mob.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +102,7 @@ public class A_CUSDetails extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 360, 1340, 190);
+        jScrollPane1.setBounds(50, 340, 1340, 350);
 
         jButton1.setText("VIEW");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -105,7 +111,7 @@ public class A_CUSDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(650, 260, 90, 23);
+        jButton1.setBounds(640, 260, 90, 40);
 
         buttonGroup1.add(parc);
         parc.setText("PARTICULAR CLIENT");
@@ -141,7 +147,7 @@ public class A_CUSDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(750, 260, 100, 23);
+        jButton2.setBounds(750, 260, 100, 40);
 
         jButton4.setText("BACK");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -150,7 +156,7 @@ public class A_CUSDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton4);
-        jButton4.setBounds(860, 260, 90, 23);
+        jButton4.setBounds(870, 260, 90, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

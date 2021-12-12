@@ -31,6 +31,9 @@ public class Admin extends javax.swing.JFrame {
         Welcome2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        
         image = new javax.swing.JLabel();
 
         jButton4.setText("jButton4");
@@ -49,7 +52,8 @@ public class Admin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(0, 0, 250, 40);
+        jButton2.setBounds(40, 30, 250, 80);
+        jButton2.setFont(new java.awt.Font("Times new roman", 0, 29));
 
         jButton3.setText("Customer Details");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -58,7 +62,8 @@ public class Admin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(250, 0, 280, 40);
+        jButton3.setBounds(290, 30, 280, 80);
+        jButton3.setFont(new java.awt.Font("Times new roman", 0, 29));
 
         jButton5.setText("Delete Client");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +72,8 @@ public class Admin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton5);
-        jButton5.setBounds(530, 0, 250, 40);
+        jButton5.setBounds(570, 30, 250, 80);
+        jButton5.setFont(new java.awt.Font("Times new roman", 0, 29));
 
         jButton6.setText("Edit Own Details");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -76,7 +82,8 @@ public class Admin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton6);
-        jButton6.setBounds(780, 0, 210, 40);
+        jButton6.setBounds(820, 30, 210, 80);
+        jButton6.setFont(new java.awt.Font("Times new roman", 0, 26));
 
         jButton7.setText("Log Out");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -85,23 +92,24 @@ public class Admin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton7);
-        jButton7.setBounds(1200, 0, 160, 40);
+        jButton7.setBounds(1240, 30, 160, 80);
+        jButton7.setFont(new java.awt.Font("Times new roman", 0, 30));
 
-        Welcome1.setFont(new java.awt.Font("Algerian", 0, 18)); // NOI18N
-        Welcome1.setForeground(new java.awt.Color(255, 255, 255));
+        Welcome1.setFont(new java.awt.Font("Algerian", 0, 35)); // NOI18N
+        Welcome1.setForeground(new java.awt.Color(0,0,0));
         Welcome1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Welcome1.setText("Hello   "+x.User_id+"   !!");
         Welcome1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(Welcome1);
-        Welcome1.setBounds(460, 550, 540, 40);
+        Welcome1.setBounds(460, 520, 540, 40);
 
-        Welcome2.setFont(new java.awt.Font("Algerian", 0, 18)); // NOI18N
-        Welcome2.setForeground(new java.awt.Color(255, 255, 255));
+        Welcome2.setFont(new java.awt.Font("Algerian", 0, 33)); // NOI18N
+        Welcome2.setForeground(new java.awt.Color(0,0,0));
         Welcome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Welcome2.setText("Welcome back to Admin portal");
         Welcome2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(Welcome2);
-        Welcome2.setBounds(460, 610, 540, 40);
+        Welcome2.setBounds(460, 630, 540, 40);
 
         jButton1.setText("Add accessories");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -110,10 +118,11 @@ public class Admin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(990, 0, 210, 40);
+        jButton1.setBounds(1030, 30, 210, 80);
+        jButton1.setFont(new java.awt.Font("Times new roman", 0, 28));
 
-        jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 60)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0,0,0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("View Catlog");
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -122,7 +131,25 @@ public class Admin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(660, 380, 140, 40);
+        jLabel1.setBounds(470, 220, 500, 90);
+        
+        
+        jLabel2.setFont(new java.awt.Font("Times new roman", 0, 30)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0,0,0));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("--------------------------------------------");
+     
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(300, 200, 840, 20);
+        
+        jLabel3.setFont(new java.awt.Font("Times new roman", 0, 30)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0,0,0));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("--------------------------------------------");
+     
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(300, 310, 840, 20);
+        
 
         image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imageIn.png"))); // NOI18N
         image.setPreferredSize(new java.awt.Dimension(1448, 731));
@@ -252,5 +279,8 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    
     // End of variables declaration//GEN-END:variables
 }
