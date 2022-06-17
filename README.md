@@ -1,4 +1,4 @@
-# JAVA_car_accessories_system
+# JAVA Car Accessories System
 
 Java mini project using
 - Java Swing
